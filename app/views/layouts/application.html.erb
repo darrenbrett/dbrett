@@ -11,7 +11,7 @@
 <body>
 	
 	<header id="main_navigation" class="clearfix">
-			<a href="#" class="name">Darren King</a>
+			<%= link_to "Darren King", root_path, class: "name" %>
 			<nav>
 				<%= link_to "Articles", posts_path %>
 				<a href="#">Projects</a>
@@ -20,6 +20,15 @@
 		</header>
 
 <%= yield %>
+
+		<footer id="main_footer">
+			<p class="copyright">&copy; 2016 Darren King</p>
+			<nav>
+				<a href="http://facebook.com/darrenbrettking" target="_blank"><i class="fa fa-facebook"></i></a>
+				<a href="http://github.com/darrenbrett" target="_blank"><i class="fa fa-github"></i></a>
+				<a href="#"></a>
+			</nav>
+		</footer>
 
 </body>
 </html>
