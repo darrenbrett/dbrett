@@ -125,6 +125,10 @@ hr {
 	  text-decoration: none;
 	  color: $dark;
 	  float:left;
+    &:hover {
+      background: lighten($highlight, 25%);
+    }
+	  
 	}
 	nav {
 	  float:right;
